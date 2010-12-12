@@ -208,6 +208,29 @@ LOCAL_SRC_FILES+= \
 	dso/dso_openssl.c \
 	dso/dso_win32.c \
 	dso/dso_vms.c \
+	engine/eng_all.c \
+	engine/eng_cnf.c \
+	engine/eng_cryptodev.c \
+	engine/eng_ctrl.c \
+	engine/eng_dyn.c \
+	engine/eng_err.c \
+	engine/eng_fat.c \
+	engine/eng_init.c \
+	engine/eng_lib.c \
+	engine/eng_list.c \
+	engine/eng_openssl.c \
+	engine/eng_padlock.c \
+	engine/eng_pkey.c \
+	engine/eng_table.c \
+	engine/tb_cipher.c \
+	engine/tb_dh.c \
+	engine/tb_digest.c \
+	engine/tb_dsa.c \
+	engine/tb_ecdh.c \
+	engine/tb_ecdsa.c \
+	engine/tb_rand.c \
+	engine/tb_rsa.c \
+	engine/tb_store.c \
 	err/err.c \
 	err/err_bio.c \
 	err/err_def.c \
@@ -314,6 +337,7 @@ LOCAL_SRC_FILES+= \
 	pkcs7/pk7_smime.c \
 	pkcs7/pk7_attr.c \
 	pkcs7/pk7_mime.c \
+	pqueue/pqueue.c \
 	rand/md_rand.c \
 	rand/randfile.c \
 	rand/rand_lib.c \

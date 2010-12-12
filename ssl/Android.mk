@@ -8,6 +8,13 @@ local_c_includes := \
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES:= \
+    d1_both.c \
+    d1_clnt.c \
+    d1_enc.c \
+    d1_lib.c \
+    d1_meth.c \
+    d1_pkt.c \
+    d1_srvr.c \
 	s2_meth.c \
 	s2_srvr.c \
 	s2_clnt.c \
