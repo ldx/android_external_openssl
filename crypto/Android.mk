@@ -250,6 +250,30 @@ local_src_files := \
 	ecdsa/ecs_ossl.c \
 	ecdsa/ecs_sign.c \
 	ecdsa/ecs_vrf.c \
+	engine/eng_all.c \
+	engine/eng_cnf.c \
+	engine/eng_cryptodev.c \
+	engine/eng_ctrl.c \
+	engine/eng_dyn.c \
+	engine/eng_err.c \
+	engine/eng_fat.c \
+	engine/eng_init.c \
+	engine/eng_lib.c \
+	engine/eng_list.c \
+	engine/eng_openssl.c \
+	engine/eng_pkey.c \
+	engine/eng_table.c \
+	engine/tb_asnmth.c \
+	engine/tb_cipher.c \
+	engine/tb_dh.c \
+	engine/tb_digest.c \
+	engine/tb_dsa.c \
+	engine/tb_ecdh.c \
+	engine/tb_ecdsa.c \
+	engine/tb_pkmeth.c \
+	engine/tb_rand.c \
+	engine/tb_rsa.c \
+	engine/tb_store.c \
 	err/err.c \
 	err/err_all.c \
 	err/err_prn.c \
@@ -365,6 +389,7 @@ local_src_files := \
 	pkcs7/pk7_mime.c \
 	pkcs7/pk7_smime.c \
 	pkcs7/pkcs7err.c \
+	pqueue/pqueue.c \
 	rand/md_rand.c \
 	rand/rand_egd.c \
 	rand/rand_err.c \
@@ -469,31 +494,6 @@ local_src_files := \
 	x509v3/v3_sxnet.c \
 	x509v3/v3_utl.c \
 	x509v3/v3err.c
-
-ifeq ($(BOARD_USE_OPENSSL_ENGINE),true)
-LOCAL_SRC_FILES += \
-       engine/eng_err.c \
-       engine/eng_lib.c \
-       engine/eng_list.c \
-       engine/eng_init.c \
-       engine/eng_ctrl.c \
-       engine/eng_table.c \
-       engine/eng_padlock.c \
-       engine/eng_pkey.c \
-       engine/eng_fat.c \
-       engine/eng_all.c \
-       engine/tb_cipher.c \
-       engine/tb_dh.c \
-       engine/tb_digest.c \
-       engine/tb_dsa.c \
-       engine/tb_ecdsa.c \
-       engine/tb_rand.c \
-       engine/tb_rsa.c \
-       engine/tb_store.c \
-       engine/eng_openssl.c \
-       engine/eng_dyn.c \
-       engine/eng_cnf.c
-endif
 
 local_c_includes := \
 	external/openssl \
